@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         list = (ListView) findViewById(R.id.listview);
         list.setAdapter(adapter);
 
-        String url = "http://ec2-52-32-168-90.us-west-2.compute.amazonaws.com:8983/solr/IRF16P1/select?indent=on&q=tweet_lang:tr&wt=json";
+        String url = "http://mysolr.compute.amazonaws.com:8983/solr/IRF16P1/select?indent=on&q=tweet_lang:tr&wt=json";
         StringRequest request = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
